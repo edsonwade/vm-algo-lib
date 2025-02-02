@@ -14,9 +14,23 @@ git merge feature/user-authentication
 git checkout develop
 git checkout -b release/1.0.0
 
+1. Make any necessary changes:
+**Update version numbers**.
+**Fix any bugs**.
+**Update documentation**.
+
+No branch de lançamento, deves:
+Atualizar os números de versão (por exemplo, atualizar ficheiros como pom.xml, package.json ou outro ficheiro de versão);
+Corrigir eventuais erros identificados;
+Atualizar a documentação (changelog, README, etc.).
+
+Commit any changes you made:
+
 # Prepare for production release
-git add .
+git add.
 git commit -m "Release version 1.0.0"
+git push origin release/1.0.0
+
 
 # Step 4: Merge the release into main and develop
 git checkout main
